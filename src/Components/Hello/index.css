@@ -1,0 +1,97 @@
+.my-container {
+    position: absolute;
+    width: 530px;
+    height: 587px;
+    left: 50px;
+    top: 90px;
+}
+
+.body {
+    background: #E5E5E5;
+}
+
+.my-title {
+    position: absolute;
+    width: 182px;
+    height: 58px;
+    left: 50px;
+    top: 90px;
+    
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 47.7488px;
+    line-height: 58px;
+    /* identical to box height */
+    
+    display: flex;
+    align-items: center;
+    
+    color: #000000;
+    
+}
+
+.my-button {
+    width: 530px;
+    height: 90px;
+    left: 50px;
+    top: 587px;
+    font-family: Poppins;
+font-style: normal;
+font-weight: bold;
+font-size: 25px;
+line-height: 163.8%;
+color: #fff;
+background: linear-gradient(0deg, #EA5050 0%, #EE745B 100%);
+border-radius: 23px;
+border-color: #F47458;
+padding: 11px 22px 11px 22px;
+display: flex;
+align-items: center;
+text-decoration-line: underline;
+}
+
+.bottom-container {
+    position: absolute;
+    width: 530px;
+    height: 90px;
+    left: 50px;
+    top: 587px;
+}
+
+.image {
+    position: absolute;
+width: 944px;
+height: 546px;
+left: 631px;
+top: 111px;
+}
+
+.my-text {
+position: absolute;
+width: 530px;
+height: 300px;
+left: 50px;
+top: 183px;
+font-family: Poppins;
+font-style: normal;
+font-weight: bold;
+font-size: 16px;
+line-height: 188.8%;
+/* or 30px */
+display: flex;
+align-items: center;
+text-align: justify;
+color: #000000;
+}
+
+.arrow {
+    position: absolute;
+width: 24.75px;
+height: 18px;
+left: 324px;
+top: 518.62px;
+
+border: 2px solid #B1B8CA;
+ 
+}

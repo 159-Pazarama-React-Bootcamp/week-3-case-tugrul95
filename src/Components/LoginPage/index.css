@@ -1,0 +1,198 @@
+
+.first-container {
+    position: absolute;
+width: 1487px;
+height: 876px;
+left: 257px;
+top: 88px;
+
+filter: drop-shadow(0px 4px 70px rgba(0, 0, 0, 0.1));
+}
+
+.rectangle {
+    /* Rectangle 1379 */
+position: absolute;
+width: 1366px;
+height: 849px;
+left: calc(50% - 1366px/2 - 60px);
+top: calc(50% - 849px/2 - 13.5px);
+}
+
+.vespa {
+    position: absolute;
+width: 1132px;
+height: 849px;
+left: calc(50% - 1132px/2 + 178px);
+top: calc(50% - 849px/2 + 13.5px);
+    background-image: url('./vespa.png');
+    background-repeat: no-repeat;
+    border-radius: 40px;
+}
+
+.fields {
+    /* Fileds */
+position: absolute;
+width: 401px;
+height: 595px;
+left: 298px;
+top: 247px;
+}
+
+.gray-rectangle {
+    /* Rectangle 1380 */
+position: absolute;
+width: 489px;
+height: 849px;
+left: calc(50% - 489px/2 + 393.5px);
+top: calc(50% - 849px/2 + 13.5px);
+
+background: #E2EEF5;
+border-radius: 40px;
+}
+
+.logo-text {
+/* Your logo */
+
+
+position: absolute;
+width: 105px;
+height: 29px;
+left: calc(50% - 105px/2 - 608.5px);
+top: calc(50% - 29px/2 - 278.5px);
+
+font-family: Gilroy;
+font-style: normal;
+font-weight: bold;
+font-size: 24px;
+line-height: 29px;
+/* identical to box height */
+
+display: flex;
+align-items: center;
+
+color: #465685;
+}
+
+.login-text { 
+/* Login */
+position: absolute;
+width: 96px;
+height: 46px;
+left: calc(50% - 96px/2 - 613px);
+top: calc(50% - 46px/2 - 228px);
+
+font-family: Gilroy;
+font-style: normal;
+font-weight: bold;
+font-size: 38px;
+line-height: 46px;
+/* identical to box height */
+
+display: flex;
+align-items: center;
+
+color: #414042;
+}
+.input-fields {
+    position: absolute;
+width: 400px;
+height: 50px;
+left: calc(50% - 400px/2 - 461px);
+top: calc(50% - 50px/2 - 128px);
+
+background: #FFFFFF;
+border: 1px solid #BCBEC0;
+box-sizing: border-box;
+border-radius: 40px;
+}
+.email-text {
+position: absolute;
+width: 34px;
+height: 16px;
+left: calc(50% - 34px/2 - 645px);
+top: calc(50% - 16px/2 - 169px);
+
+font-family: Gilroy;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 16px;
+display: flex;
+align-items: center;
+
+color: #414042;
+}
+.password-text {
+    position: absolute;
+width: 61px;
+height: 16px;
+left: calc(50% - 61px/2 - 631.5px);
+top: 200px;
+
+font-family: Gilroy;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 16px;
+display: flex;
+align-items: center;
+
+color: #414042;
+}
+.forgot-password-text {
+    position: absolute;
+width: 98px;
+height: 14px;
+left: calc(50% - 98px/2 - 612px);
+top: calc(50% - 14px/2 + 27px);
+
+font-family: Gilroy;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 14px;
+/* identical to box height */
+
+display: flex;
+align-items: center;
+
+color: #465685;
+}
+.button {
+position: absolute;
+width: 400px;
+height: 50px;
+left: calc(50% - 400px/2 - 461px);
+top: calc(50% - 50px/2 + 101px);
+background: #A93159;
+border-radius: 40px;
+font-family: Gilroy;
+font-style: normal;
+font-weight: bold;
+font-size: 20px;
+line-height: 24px;
+display:flex; 
+justify-content:center; 
+align-items:center; 
+color: #FFFFFF;
+
+
+}
+
+.register-text {
+    position: absolute;
+width: 178px;
+height: 16px;
+left: calc(50% - 178px/2 - 534px);
+top: calc(50% - 16px/2 + 293px);
+
+font-family: Gilroy;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 16px;
+display: flex;
+align-items: center;
+
+color: #BCBEC0;
+}

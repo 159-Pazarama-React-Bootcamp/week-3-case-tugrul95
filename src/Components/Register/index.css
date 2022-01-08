@@ -1,0 +1,17 @@
+.register-password-text {
+    position: absolute;
+    width: 61px;
+    height: 16px;
+    left: calc(50% - 61px/2 - 632.5px);
+    top: calc(50% - 160px/2 - 19px);
+    
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    
+    color: #414042;
+}

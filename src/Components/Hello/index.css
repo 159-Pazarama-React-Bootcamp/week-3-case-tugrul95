@@ -32,23 +32,25 @@
 }
 
 .my-button {
-    width: 530px;
-    height: 90px;
-    left: 50px;
-    top: 587px;
-    font-family: Poppins;
+width: 530px;
+height: 90px;
+left: 50px;
+top: 587px;
+font-family: Poppins;
 font-style: normal;
 font-weight: bold;
 font-size: 25px;
 line-height: 163.8%;
 color: #fff;
 background: linear-gradient(0deg, #EA5050 0%, #EE745B 100%);
-border-radius: 23px;
+border-radius: 100px;
 border-color: #F47458;
 padding: 11px 22px 11px 22px;
 display: flex;
 align-items: center;
+justify-content: center;
 text-decoration-line: underline;
+text-decoration-skip-ink: none;
 }
 
 .bottom-container {

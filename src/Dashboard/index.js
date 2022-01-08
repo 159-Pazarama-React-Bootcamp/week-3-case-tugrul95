@@ -1,4 +1,5 @@
 import React, {Component} from "react";
+import "./index.css"
 import Hello from "../Components/Hello";
 import LoginPage from "../Components/LoginPage";
 import Container from "../Components/Container"

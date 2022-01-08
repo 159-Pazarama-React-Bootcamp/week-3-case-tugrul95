@@ -1,41 +1,38 @@
 import React from "react";
+import axios from "axios";
 import "./index.css"
 import { useState } from "react";
 import Input from "../Input";
 import {
   Link
 } from 'react-router-dom';
-import { auth, signInWithGoogle } from "../../firebase/config";
-import {
-  signInWithEmailAndPassword, 
-  onAuthStateChanged
-} from "firebase/auth";
-import Image from "../../Images/vespa.png"
+import { signInWithGoogle } from "../../firebase/config";
+import Image from "../../Images/vespa.png";
+
 
 function LoginPage() {
-  
-  const [user, setUser] = useState({}); // giriş yapan kullanıcıyı temsil eder
-  onAuthStateChanged(auth, (currentUser) => { // sayfa yenilendiğinde kullanıcı girişini tutar
-    setUser(currentUser);
-  });
+  // api'den kullanıcıları get ile çek ve checkEmail callback'ine parametre olarak gönder  
+  const handleSubmit = e => {
+    e.preventDefault();
+  axios
+    .get("http://localhost:3002/users") 
+    .then((res) => checkEmail(res.data));
+};
+const checkEmail = (getdata) => {
+  // getdata içerisindeki veri eğer forma girilen kullanıcı ve parolayı içeriyorsa konsola başarıyla giriş yapıldı diye bastır.
+  for (var i = 0, len = getdata.length; i < len; i++) {
+    if(getdata[i].username.includes(form.userName) && getdata[i].password.includes(form.password)){
+      console.log("Succesfully loginned")
+  } 
+    } 
+    
+};
 
-    const [form, setForm] = useState({ userName: "", password: "" });
-    const handleChange = (event) => {
-      setForm({ ...form, [event.target.name]: event.target.value });
-    };
-    const login = async () => {
-      try {
-        const user = await signInWithEmailAndPassword( 
-          auth, // kullanıcı adı ve parola auth içinde tutulur
-          form.userName,
-          form.password
-        );
-        console.log(user); //login işlemi başarılı olursa konsola kullanıcı bilgileri bas
-      } catch (error) {
-        console.log(error.message); // login işlemi başarısız olursa konsola hata mesajını bas
-      }
-    };
-        return (
+const [form, setForm] = useState({ userName: "", password: "" });
+const handleChange = (event) => {
+setForm({ ...form, [event.target.name]: event.target.value });};
+
+return (
 // arka plana vespa resmini yerleştir
 <div className="background"> 
           <div >
@@ -49,8 +46,6 @@ function LoginPage() {
                     <div className="vespa"></div>
                                     
       <div className="fields">
-      <h4> User Logged In:</h4>
-              {user.email} 
                 <div className="logo-text">
                 <p>Your Logo</p>
                 </div>
@@ -102,7 +97,7 @@ function LoginPage() {
           <input type="image" alt="img" className="facebook-button" src="https://upload.wikimedia.org/wikipedia/commons/f/fb/Facebook_icon_2013.svg"/>
         </div>
       <div >
-          <button className="button" type="submit" onClick={login}>Sign in</button> {/*butona tıkladığında login fonksiyonu tetiklenir*/}
+          <button className="button" type="submit" onClick={handleSubmit}>Sign in</button> {/*butona tıkladığında login fonksiyonu tetiklenir*/}
     </div>
 
       

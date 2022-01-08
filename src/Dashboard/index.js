@@ -7,8 +7,7 @@ import RegisterPage from "../Components/Register";
 import {
     BrowserRouter as Router,
     Routes,
-    Route,
-    Link
+    Route
 } from 'react-router-dom';
 class Auth extends Component{
     constructor(props) {

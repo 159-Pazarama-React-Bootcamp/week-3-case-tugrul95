@@ -1,9 +1,11 @@
 import React from "react";
 import axios from "axios";
-import "./index.css"
+import "./index.css";
+import Image from "../../Images/vespa.png";
+import backImage from "../../Images/Background.png";
 import { useState } from "react";
 import Input from "../Input";
-
+import Label from "../../Components/Label"
 function RegisterPage() {
 
   const handleSubmit = (event) =>{
@@ -20,18 +22,18 @@ function RegisterPage() {
         setForm({ ...form, [event.target.name]: event.target.value });
       };
         return (
-  <div className="first-container">
-    <div className="rectangle">
-                    <div className="gray-rectangle"></div>
-                    <div className="vespa"></div>
-                        
+  <div className="register-container">
+    <img src={backImage} alt="back" />
+    <div className="whiteBox">
+                    <img className="avatar" src={Image} alt="imgg" />
+              
       <div className="fields">
 
-              <div className="email-text">
-                <p>Email</p>
-              </div>
+              
+                <p className="register-email">Email</p>
+              
               <div className="register-password-text">
-                <p>Password</p>
+               
               </div>
 
             <div className='input-fields'>
@@ -42,7 +44,7 @@ function RegisterPage() {
                 value={form.userName}
                 onChange={handleChange}
                 />
-
+              <Label text={"Password"}/>
               <Input
                 type={"password"}
                 name='password'

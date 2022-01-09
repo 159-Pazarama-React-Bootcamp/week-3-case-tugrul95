@@ -4,16 +4,17 @@ import EyeIcon from "../svg/EyeIcon";
 import "./index.css";
 
 const Input = (props) => {
-  const { type, placeholder, ...args } = props;
+  const { label, type, placeholder, ...args } = props;
   const [inputType, setInputType] = useState(type);
 
-  const handleShowPasswordIconClick = () => {
+  const passwordIconClick = () => {
     if (inputType === "text") {
       setInputType("password");
     } else {
       setInputType("text");
     }
   };
+  
   return (
     <div className='container'>
       <input
@@ -23,7 +24,7 @@ const Input = (props) => {
         {...args}
       />
       {type === "password" && (
-        <i className='icon' onClick={handleShowPasswordIconClick}>
+        <i className='icon' onClick={passwordIconClick}>
           <EyeIcon />
         </i>
       )}
@@ -34,6 +35,7 @@ const Input = (props) => {
 Input.propTypes = {
   type: PropTypes.oneOf(["text", "password"]),
   placeholder: PropTypes.string,
+  label: PropTypes.string,
 };
 
 Input.defaultProps = {

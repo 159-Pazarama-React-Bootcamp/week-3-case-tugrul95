@@ -1,0 +1,16 @@
+.label {
+    font-family: "Poppins", sans-serif;
+    font-style: small;
+    font-size: 14px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    color: #414042;
+    margin-top: 35px;
+    margin-bottom: 8px;
+}
+
+.email-label {
+    margin-top: -500px;
+    margin-left: -40px;
+}

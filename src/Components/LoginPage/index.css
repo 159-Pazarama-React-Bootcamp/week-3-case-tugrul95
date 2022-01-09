@@ -1,8 +1,15 @@
+body {
+    width: auto; 
+    height: auto;
+    margin-top: 0%;
+    margin-left: 0%;
+}
 .background {
     position: relative;
-    width: 1920px;
-    height: 1080px;
-    z-index: 4;
+    max-width: 1920px;
+    max-height: 1080px;
+    margin: 0px 0px;
+    background: linear-gradient(90deg, #00B4DB 0%, #0083B0 100%);
 }
 .img {
     position: absolute;
@@ -14,13 +21,13 @@
     
 }
 .first-container {
-position: absolute;
-width: 1487px;
-height: 876px;
-left: 257px;
-top: 88px;
-border-radius: 40px;
-filter: drop-shadow(0px 4px 70px rgba(0, 0, 0, 0.1));
+    position: absolute;
+    width: 1496px;
+    height: 849px;
+    left: 11%;
+    top: 10%;
+    background: #FFFFFF;
+    border-radius: 40px;
 
 }
 
@@ -36,24 +43,17 @@ border-radius: 40px;
 
 .vespa {
     position: absolute;
-width: 1132px;
-height: 849px;
-left: calc(50% - 1132px/2 + 178px);
-top: calc(50% - 849px/2 + 13.5px);
-    background-image: url('../../Images/vespa.png');
-    background-repeat: no-repeat;
-    border-radius: 40px;
+    width: 1132px;
+    height: 849px;
+    left: calc(50% - 1132px/2 + 182px);
+    top: calc(50% - 849px/2 - 0.5px);
 }
 
 .fields {
-    /* Fileds */
-position: absolute;
-width: 401px;
-height: 595px;
-left: 298px;
-top: 247px;
-display: flex;
-flex-direction: column;
+    font-family: 'Poppins', sans-serif;
+    margin: 98px 969px 126px 126px;
+    width: 401px;
+    height: 595px;
 }
 
 .gray-rectangle {
@@ -69,45 +69,16 @@ border-radius: 40px;
 }
 
 .logo-text {
-/* Your logo */
-position: absolute;
-width: 110px;
-height: 29px;
-left: calc(50% - 105px/2 - 608.5px);
-top: calc(50% - 29px/2 - 278.5px);
+    font-size: 24px;
+    line-height: 29px;
+    color: #465685;
 
-font-family: Gilroy;
-font-style: normal;
-font-weight: bold;
-font-size: 24px;
-line-height: 29px;
-/* identical to box height */
-
-display: flex;
-align-items: center;
-
-color: #465685;
 }
 
 .login-text { 
-/* Login */
-position: absolute;
-width: 96px;
-height: 46px;
-left: calc(50% - 96px/2 - 613px);
-top: calc(50% - 46px/2 - 228px);
-
-font-family: Gilroy;
-font-style: normal;
-font-weight: bold;
-font-size: 38px;
-line-height: 46px;
-/* identical to box height */
-
-display: flex;
-align-items: center;
-
-color: #414042;
+    font-weight: bold;
+    font-size: 38px;
+    line-height: 46px;
 }
 .input-fields {
     position: absolute;
@@ -165,7 +136,7 @@ top: calc(50% - 14px/2 + 27px);
 font-family: Gilroy;
 font-style: normal;
 font-weight: normal;
-font-size: 12px;
+font-size: 13px;
 line-height: 14px;
 /* identical to box height */
 
@@ -312,3 +283,17 @@ align-items: center;
 color: #798995;
 }
 
+.social-container {
+    width: 100%;
+    display: flex;
+    justify-content: baseline;
+    margin-top: 10px;
+}
+.email {
+    font-family: "Poppins", sans-serif;
+    font-style: small;
+    font-size: 16px;
+    line-height: 16px;
+   margin-left: -40px;
+   margin-top: 50px; 
+}
